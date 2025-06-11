@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
-import { Github, Linkedin, Mail, ExternalLink, Download, Menu, X, Code, Brain, Smartphone, Globe } from "lucide-react";
+import { Github, Linkedin, Mail, ExternalLink, Download, Menu, X, Code, Brain, Smartphone, Globe, ArrowRight } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Index = () => {
@@ -131,57 +131,122 @@ const Index = () => {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section id="home" className="pt-24 pb-20 section-padding">
-        <div className="max-container">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="flex-1 text-center lg:text-left animate-fade-in">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Hi, I'm <span className="gradient-text">Sohel Shaik</span>
+      {/* Enhanced Hero Section */}
+      <section id="home" className="relative pt-24 pb-20 section-padding overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-tech-green/20 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-tech-purple/20 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div className="max-container relative z-10">
+          <div className="flex flex-col lg:flex-row items-center gap-12 min-h-[80vh]">
+            <div className="flex-1 text-center lg:text-left">
+              {/* Status Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm text-primary mb-6 animate-fade-in">
+                <div className="w-2 h-2 bg-tech-green rounded-full animate-pulse"></div>
+                Available for opportunities
+              </div>
+
+              {/* Main Heading */}
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
+                Hi, I'm{" "}
+                <span className="relative">
+                  <span className="gradient-text">Sohel Shaik</span>
+                  <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-primary to-tech-green rounded-full"></div>
+                </span>
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-4">
-                Innovating with Code. Solving with Intelligence.
-              </p>
-              <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
-                Aspiring Software Engineer specializing in AI & ML, passionate about creating scalable and intelligent systems that drive meaningful change.
+
+              {/* Tagline */}
+              <div className="mb-6 animate-slide-in">
+                <p className="text-xl md:text-3xl font-semibold text-foreground mb-2">
+                  Innovating with <span className="text-primary">Code</span>.
+                </p>
+                <p className="text-xl md:text-3xl font-semibold text-foreground">
+                  Solving with <span className="text-tech-green">Intelligence</span>.
+                </p>
+              </div>
+
+              {/* Description */}
+              <p className="text-lg text-muted-foreground mb-8 max-w-2xl leading-relaxed animate-fade-in">
+                Aspiring Software Engineer specializing in <span className="text-primary font-medium">AI & ML</span>, passionate about creating 
+                <span className="text-tech-green font-medium"> scalable and intelligent systems</span> that drive meaningful change.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-                <Button size="lg" className="tech-glow">
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12 animate-fade-in">
+                <Button size="lg" className="group tech-glow bg-gradient-to-r from-primary to-tech-green hover:from-primary/90 hover:to-tech-green/90 transition-all duration-300">
                   <a href="#projects" className="flex items-center gap-2">
                     Explore My Work
-                    <ExternalLink size={18} />
+                    <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                   </a>
                 </Button>
-                <Button variant="outline" size="lg">
-                  <Download size={18} className="mr-2" />
+                <Button variant="outline" size="lg" className="group border-primary/30 hover:border-primary hover:bg-primary/5">
+                  <Download size={18} className="mr-2 group-hover:scale-110 transition-transform" />
                   Download Resume
                 </Button>
               </div>
 
-              <div className="flex gap-6 justify-center lg:justify-start">
+              {/* Social Links */}
+              <div className="flex gap-6 justify-center lg:justify-start animate-slide-in">
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" 
-                   className="text-muted-foreground hover:text-primary transition-colors">
-                  <Linkedin size={24} />
+                   className="group p-3 rounded-full bg-secondary/50 hover:bg-primary/20 border border-border hover:border-primary/50 transition-all duration-300">
+                  <Linkedin size={24} className="text-muted-foreground group-hover:text-primary transition-colors" />
                 </a>
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer"
-                   className="text-muted-foreground hover:text-primary transition-colors">
-                  <Github size={24} />
+                   className="group p-3 rounded-full bg-secondary/50 hover:bg-primary/20 border border-border hover:border-primary/50 transition-all duration-300">
+                  <Github size={24} className="text-muted-foreground group-hover:text-primary transition-colors" />
                 </a>
                 <a href="mailto:shaiksohel120@gmail.com"
-                   className="text-muted-foreground hover:text-primary transition-colors">
-                  <Mail size={24} />
+                   className="group p-3 rounded-full bg-secondary/50 hover:bg-primary/20 border border-border hover:border-primary/50 transition-all duration-300">
+                  <Mail size={24} className="text-muted-foreground group-hover:text-primary transition-colors" />
                 </a>
               </div>
             </div>
             
+            {/* Profile Image Section */}
             <div className="flex-1 flex justify-center lg:justify-end animate-fade-in">
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary to-tech-green p-1">
-                <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
-                  alt="Sohel Shaik"
-                  className="w-full h-full rounded-full object-cover border-4 border-background"
-                />
+              <div className="relative">
+                {/* Floating Elements */}
+                <div className="absolute -top-4 -left-4 w-8 h-8 bg-primary rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
+                <div className="absolute -top-2 -right-6 w-6 h-6 bg-tech-green rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
+                <div className="absolute -bottom-6 -left-2 w-4 h-4 bg-tech-purple rounded-full animate-bounce" style={{ animationDelay: '2s' }}></div>
+                
+                {/* Main Image Container */}
+                <div className="relative w-72 h-72 md:w-96 md:h-96">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary via-tech-green to-tech-purple rounded-full p-1 animate-pulse">
+                    <div className="w-full h-full bg-background rounded-full p-2">
+                      <img 
+                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                        alt="Sohel Shaik"
+                        className="w-full h-full rounded-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  
+                  {/* Skill Tags Floating Around */}
+                  <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
+                    <Badge className="bg-primary/20 text-primary border-primary/30 animate-fade-in" style={{ animationDelay: '0.5s' }}>
+                      React
+                    </Badge>
+                  </div>
+                  <div className="absolute top-1/4 -right-8">
+                    <Badge className="bg-tech-green/20 text-tech-green border-tech-green/30 animate-fade-in" style={{ animationDelay: '1s' }}>
+                      AI/ML
+                    </Badge>
+                  </div>
+                  <div className="absolute bottom-1/4 -left-8">
+                    <Badge className="bg-tech-purple/20 text-tech-purple border-tech-purple/30 animate-fade-in" style={{ animationDelay: '1.5s' }}>
+                      Python
+                    </Badge>
+                  </div>
+                  <div className="absolute -bottom-6 right-1/4">
+                    <Badge className="bg-primary/20 text-primary border-primary/30 animate-fade-in" style={{ animationDelay: '2s' }}>
+                      AWS
+                    </Badge>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
