@@ -226,7 +226,7 @@ const Index = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-primary via-tech-green to-tech-purple rounded-full p-1 animate-pulse">
                     <div className="w-full h-full bg-background rounded-full p-2">
                       <img 
-                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                        src="https://i.postimg.cc/KcTwck8P/1000066506.jpg"
                         alt="Sohel Shaik"
                         className="w-full h-full rounded-full object-cover"
                       />
@@ -703,5 +703,3 @@ const Index = () => {
 };
 
 export default Index;
-
-</edits_to_apply>
