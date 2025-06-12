@@ -228,8 +228,14 @@ const Index = () => {
                   </a>
                 </Button>
                 <Button variant="outline" size="lg" className="group border-primary/30 hover:border-primary hover:bg-primary/5">
-                  <Download size={18} className="mr-2 group-hover:scale-110 transition-transform" />
-                  Download Resume
+                  <a 
+                    href="https://drive.google.com/uc?export=download&id=1dlh9yW8knqgnvAxyX21fg7qXC5s_Lsn0" 
+                    download
+                    className="flex items-center gap-2"
+                  >
+                    <Download size={18} className="group-hover:scale-110 transition-transform" />
+                    Download Resume
+                  </a>
                 </Button>
               </div>
 
