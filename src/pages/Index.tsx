@@ -235,11 +235,11 @@ const Index = () => {
 
               {/* Social Links */}
               <div className="flex gap-6 justify-center lg:justify-start animate-slide-in">
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" 
+                <a href="https://www.linkedin.com/in/shaik-sohel-857bba286" target="_blank" rel="noopener noreferrer" 
                    className="group p-3 rounded-full bg-secondary/50 hover:bg-primary/20 border border-border hover:border-primary/50 transition-all duration-300">
                   <Linkedin size={24} className="text-muted-foreground group-hover:text-primary transition-colors" />
                 </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                <a href="https://github.com/Sksohel2003" target="_blank" rel="noopener noreferrer"
                    className="group p-3 rounded-full bg-secondary/50 hover:bg-primary/20 border border-border hover:border-primary/50 transition-all duration-300">
                   <Github size={24} className="text-muted-foreground group-hover:text-primary transition-colors" />
                 </a>
@@ -404,13 +404,13 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="flex gap-3 pt-4">
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex-1">
+                  <a href="https://www.linkedin.com/in/shaik-sohel-857bba286" target="_blank" rel="noopener noreferrer" className="flex-1">
                     <Button variant="outline" size="sm" className="w-full group hover:bg-primary/5 hover:border-primary/50">
                       <Linkedin size={16} className="mr-2 group-hover:text-primary transition-colors" />
                       LinkedIn
                     </Button>
                   </a>
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex-1">
+                  <a href="https://github.com/Sksohel2003" target="_blank" rel="noopener noreferrer" className="flex-1">
                     <Button variant="outline" size="sm" className="w-full group hover:bg-primary/5 hover:border-primary/50">
                       <Github size={16} className="mr-2 group-hover:text-primary transition-colors" />
                       GitHub
@@ -727,11 +727,11 @@ const Index = () => {
               </p>
             </div>
             <div className="flex gap-4">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" 
+              <a href="https://www.linkedin.com/in/shaik-sohel-857bba286" target="_blank" rel="noopener noreferrer" 
                  className="p-2 rounded-lg bg-secondary/50 hover:bg-primary/20 border border-border hover:border-primary/50 transition-all duration-300">
                 <Linkedin size={20} className="text-muted-foreground hover:text-primary transition-colors" />
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+              <a href="https://github.com/Sksohel2003" target="_blank" rel="noopener noreferrer"
                  className="p-2 rounded-lg bg-secondary/50 hover:bg-primary/20 border border-border hover:border-primary/50 transition-all duration-300">
                 <Github size={20} className="text-muted-foreground hover:text-primary transition-colors" />
               </a>
