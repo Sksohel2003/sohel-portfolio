@@ -37,6 +37,7 @@ const Index = () => {
           from_email: formData.email,
           message: formData.message,
           to_name: 'Sohel Shaik',
+          to_email: 'shaiksohel120@gmail.com', // Added recipient email
         },
         publicKey
       );
